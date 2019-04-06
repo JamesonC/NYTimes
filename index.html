@@ -1,0 +1,63 @@
+<!-- // Header, Search Parameters, Top Articles, Footer
+// Number of Records = 5, 10, 15
+// Search Parameters ("Search Term" id='search-term', "Number of Records" id='records-num', "Start Year" id='startYear', "End Year" id='endYear')
+// Buttons ("Search" id='searchBtn', "Clear Results" id='clearBtn') -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>NYT Search</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=New+Rocker" rel="stylesheet">
+</head>
+
+<body>
+  <div class="box">
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">New York Times Search</span>
+    </nav>
+
+    <form>
+
+        <div class="form-group w-75 p-3" >
+          <label for="exampleInputEmail1">Search Term</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+
+        <div class="form-group w-75 p-3" >
+            <label for="exampleInputEmail1">Number of Records to Retrieve:</label>
+            <select class="custom-select custom-select-lg mb-3">
+                <!-- <option selected>Number of Records to Retreive: </option> -->
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+
+        <div class="form-group w-75 p-3" >
+            <label for="startYear">Start year (optional):</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+
+        <div class="form-group w-75 p-3" >
+            <label for="EndYear">End year (optional):</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+     
+        <button type="search" class="btn btn-primary">Search</button>
+        <button type="clear"  class="btn btn-primary">Clear Results</button>
+
+      </form>
+
+    <div id= "results">
+        <div class="p-3 mb-2 bg-primary text-white">Top Articles</div>
+    </div>
+  </div>
+<script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</body>
+</html>
